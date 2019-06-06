@@ -1997,6 +1997,8 @@ class DefaultObjectTransformer(object):
         "java.lang.Boolean": JavaBool,
         "java.lang.Integer": JavaInt,
         "java.lang.Long": JavaInt,
+        "java.util.Vector": JavaList,
+        "java.util.Hashtable": JavaMap,
     }
 
     def create(self, classdesc, unmarshaller=None):
